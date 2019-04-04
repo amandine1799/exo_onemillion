@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Arvo';
+}
+/* Nav */
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #222222;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav > .nav-header > a > img {
+  padding-top: 12px;
+  margin-left: 200px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 13px;
+}
+.nav > .nav-links > a:last-child {
+  padding-right: 200px;
+}
+
+.nav > .nav-links > a:first-child {
+  margin-right: 20px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding-top: 15px;
+  letter-spacing: .5px;
+  text-decoration: none;
+  color: #8d8d8d;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/*Jumbotron */
+
+.jumbo {
+  background-image: url(../images/hero-image.jpg);
+  margin-bottom: 2rem;
+  height: 600px;
+  padding: 2rem 1rem;
+}
+
+.jumbo > p, h1 {
+  color: white;
+  text-align: center;
+}
+
+.jumbo > h1 {
+  font-size: 50px;
+}
+
+.jumbo > p {
+  font-size: 20px;
+}
+
+a.bouton {
+  padding: 20px 40px;
+  font-size: 25px;
+  background: #ff4d4d;
+  color: white;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+  border: 2px solid #ff4d4d;
+  text-decoration: none;
+}
+
+#who > p {
+  text-align: center;
+  font-size: 16px;
+}
+
+#who > h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #ff471a
+}
+
+#who > p > span {
+    color: #ff471a
+}
+
+hr {
+  width: 150px;
+  border: 1px solid #ff471a;
+}
