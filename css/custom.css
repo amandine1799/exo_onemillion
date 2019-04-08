@@ -119,7 +119,7 @@ html, body {
 
 @media all and (max-width:800px) {
   .jumbo {
-    height: 900px;
+    height: 100%;
   }
 
 }
