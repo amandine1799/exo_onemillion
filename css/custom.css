@@ -13,6 +13,8 @@ html, body {
   background-color: #222222;
   position: relative;
   text-transform: uppercase;
+  position: fixed;
+  z-index: 1030;
 }
 
 .nav > .nav-header > a > img {
@@ -149,6 +151,10 @@ a.bouton {
   text-decoration: none;
 }
 
+a.bouton:hover {
+background-color: #ff3333;
+}
+
 /* Who */
 
 #who > p {
@@ -190,10 +196,10 @@ hr {
 }
 
   h3 {
-  font-size: 20px;
-  text-align: center;
-  color: #F74C3C;
-  text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    color: #F74C3C;
+    text-transform: uppercase;
 }
 
 #container {
@@ -228,6 +234,10 @@ a.start {
   color: #F74C3C;
   border: 1px solid grey;
   text-decoration: none;
+}
+
+a.start:hover {
+  background: #C5C5C5;
 }
 
 .fa-stack {
